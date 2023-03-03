@@ -1,17 +1,24 @@
 // Import data
-
-// Import components
+import { postings } from './postings';
+// Styles
 import './App.css';
-
+// Components
+import Sidebar from './Sidebar';
+import Searchbar from './Searchbar';
+import Directory from './Directory';
+import Gallery from './Gallery';
+// Component
 function App(){
   return (
-    <div>
-      <h1>craigslist</h1>
-      <div className="App">
-        {/* Your content will go here! */}
-      </div>
+    // App container
+    <div className='App'>
+        {/* Page title */}
+        <h1>Craigslist</h1>
+        <Sidebar />
+        <Searchbar />
+        <Directory />
+        <Gallery data = {postings} />
     </div>
   );
 }
-
 export default App;
