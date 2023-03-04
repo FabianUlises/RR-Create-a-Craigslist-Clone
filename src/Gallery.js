@@ -2,11 +2,18 @@ import React from 'react';
 // Importing component
 import Posting from './Posting';
 // Component
-const Gallery = () => {
+const Gallery = (props) => {
     return (
         <div className='gallery'>
-            <h1>Gallery</h1>
-            <Posting />
+            {
+                // Looping through data passed as props
+                props.data.map((posting, i) => {
+                    return (
+                        // Returning posting component with data
+                        <Posting data={posting} index={i} />
+                    )
+                })
+            }
         </div>
     )
 };
