@@ -4,7 +4,7 @@ import Help from './Help';
 // Component
 const Sidebar = () => {
     return (
-        <div>
+        <div className='sideBar'>
             <h1>Sidebar</h1>
             <Help />
         </div>

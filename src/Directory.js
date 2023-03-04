@@ -2,7 +2,7 @@ import React from 'react';
 // Component
 const Directory = () => {
     return (
-        <div>
+        <div className='directory'>
             <h1>Directory</h1>
         </div>
     )

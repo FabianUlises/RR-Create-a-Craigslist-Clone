@@ -2,7 +2,7 @@ import React from 'react';
 // Component
 const Searchbar = () => {
     return (
-        <div>
+        <div className='searchbar'>
             <h1>Searchbar</h1>
         </div>
     )

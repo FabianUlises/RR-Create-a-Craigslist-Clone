@@ -1,12 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
+  min-height: 100vh;
   margin: 0;
   display: grid;
   grid-template-rows: 80px 70px 4fr 4fr;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-template-areas:  "sidebar searchbar searchbar"
-                        "sidebar directory directory"
-                        "sidebar gallery gallery"
-                        "sidebar gallery gallery"
+  grid-template-areas:  
+    "sidebar searchbar searchbar"
+    "sidebar directory directory"
+    "sidebar gallery gallery"
+    "sidebar gallery gallery";
+  background: hsl(210 5% 5%);
+  color: whitesmoke;
 }
 
 img {
@@ -16,7 +24,7 @@ img {
 
 .directory {
   grid-area: directory;
-  border: 1px solid black;
+  border: 1px solid rgb(152, 94, 94);
 }
 
 .gallery {
@@ -39,7 +47,7 @@ img {
 }
 
 .searchbar {
-  font-size: 5vh;
+  font-size: 2.3rem;
   grid-area: searchbar;
   border: 1px solid black;
 }

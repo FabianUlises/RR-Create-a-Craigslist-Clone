@@ -4,7 +4,7 @@ import Posting from './Posting';
 // Component
 const Gallery = () => {
     return (
-        <div>
+        <div className='gallery'>
             <h1>Gallery</h1>
             <Posting />
         </div>

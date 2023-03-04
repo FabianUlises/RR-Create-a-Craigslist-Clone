@@ -12,8 +12,6 @@ function App(){
   return (
     // App container
     <div className='App'>
-        {/* Page title */}
-        <h1>Craigslist</h1>
         <Sidebar />
         <Searchbar />
         <Directory />
